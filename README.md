@@ -1,16 +1,52 @@
-# React + Vite
+# PokeDex Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en **React + Vite** que consume datos desde la **PokeAPI**  
+ https://pokeapi.co/api/v2/pokemon  
 
-Currently, two official plugins are available:
+Permite visualizar un listado de Pokémon con información básica y una segunda vista con más detalles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+##  Demo en línea
+- **Sitio Deploy:** [https://pokedex-react-yashira.vercel.app/](https://pokedex-react-yashira.vercel.app/)  
+- **Repositorio GitHub:** [https://github.com/yashira692/pokedex-react](https://github.com/yashira692/pokedex-react)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*(Reemplaza el enlace de deploy con el tuyo real cuando Vercel termine de construirlo.)*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Funcionalidades principales
+| Funcionalidad | Descripción |
+|----------------|-------------|
+| Configuración inicial | Proyecto creado con Vite y React, estructura modular (componentes, rutas y estilos). |
+|  Consumo de API | Conecta a la API pública de PokeAPI y obtiene datos de Pokémon. |
+|  Ruta `/` (Home) | Hero con nombre del proyecto, descripción y un listado de 12 Pokémon. |
+| Ruta `/entities` | Listado más detallado mostrando ID, altura y peso de cada Pokémon. |
+|  Navegación | Implementada con React Router DOM. |
+|  Estilos | Bootstrap + CSS personalizado. |
+
+---
+
+##  Tecnologías utilizadas
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [PokeAPI](https://pokeapi.co/)
+
+---
+
+##  Cómo ejecutar el proyecto localmente
+
+```bash
+# 1  Clonar el repositorio
+git clone https://github.com/yashira692/pokedex-react.git
+
+# 2 Entrar a la carpeta
+cd pokedex-react
+
+# 3 Instalar dependencias
+npm install
+
+# 4 Ejecutar en modo desarrollo
+npm run dev
