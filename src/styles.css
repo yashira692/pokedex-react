@@ -1,0 +1,25 @@
+:root {
+    --brand: #e3350d;
+}
+
+body {
+    background: #fafafa;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--brand), #f7b500);
+    color: white;
+    padding: 3rem 1rem;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.card-pokemon img {
+    image-rendering: pixelated;
+}
